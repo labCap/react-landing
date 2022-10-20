@@ -1,17 +1,19 @@
 import React from "react";
+import { Button } from "../Button/Button";
 
 import "./Section.scss";
 
-export const Section = () => {
+export const Section = ({ title, subtitle, bgImg }) => {
 	return (
-		<section className="section">
+		<section
+			className="section"
+			style={{ background: `url(${bgImg}) no-repeat center/cover` }}
+		>
 			<div className="container">
 				<div className="section__inner">
-					<h2 className="section__title">Style & Beauty</h2>
-					<h3 className="section__subtitle">New fashion brand</h3>
-					<a href="#" className="btn">
-						VIEW PROJECT
-					</a>
+					<h2 className="section__title">{title}</h2>
+					<h3 className="section__subtitle">{subtitle}</h3>
+					<Button />
 				</div>
 			</div>
 		</section>
