@@ -1,0 +1,32 @@
+// ==================================================================================
+
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+	&__list-item {
+		@media (min-width: 768px) {
+			&:hover {
+				.nav__list-link {
+					color: #fff;
+				}
+			}
+		}
+		&:active {
+			.nav__list-link {
+				color: darken($color: #fff, $amount: 20);
+			}
+		}
+	}
+	&__list-link {
+		font-family: "Playfair Display";
+		font-weight: 400;
+		font-size: 22px;
+		color: #ccc;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+// ==================================================================================
