@@ -1,0 +1,40 @@
+@import "../../vars";
+// ====================================================================
+
+.footer {
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 50px 0;
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		a {
+			transition: all 0.3s linear;
+			@media (min-width: 768px) {
+				&:hover {
+					color: $textColor;
+				}
+			}
+
+			&:active {
+				color: darken($color: $textColor, $amount: 20);
+			}
+		}
+	}
+
+	&__info {
+		font-family: "Open Sans";
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 28px;
+		color: #666666;
+	}
+}
+
+// ====================================================================
