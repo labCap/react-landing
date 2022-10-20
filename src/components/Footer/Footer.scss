@@ -4,15 +4,28 @@
 .footer {
 	&__inner {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
 		padding: 50px 0;
+
+		@media (max-width: 768px) {
+			justify-content: center;
+		}
 	}
 
 	&__box {
+		flex-wrap: wrap;
 		display: flex;
 		align-items: center;
 		gap: 20px;
+
+		@media (max-width: 425px) {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+			justify-content: center;
+		}
 
 		a {
 			transition: all 0.3s linear;

@@ -2,9 +2,9 @@ import React from "react";
 
 import "./Nav.scss";
 
-export const Nav = () => {
+export const Nav = ({ openMenu }) => {
 	return (
-		<nav className="nav">
+		<nav className={openMenu ? "nav menu-open" : "nav"}>
 			<ul className="nav__list">
 				<li className="nav__list-item">
 					<a href="#" className="nav__list-link">

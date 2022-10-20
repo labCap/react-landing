@@ -3,12 +3,14 @@
 
 .section {
 	position: relative;
+
 	&__inner {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		height: 100vh;
+		min-height: 500px;
 	}
 
 	&::before {
@@ -27,7 +29,7 @@
 		font-weight: 400;
 		font-size: calc(40px + (140 - 40) * ((100vw - 320px) / ($container - 320)));
 		line-height: calc(
-			80px + (154 - 80) * ((100vw - 320px) / ($container - 320))
+			60px + (154 - 60) * ((100vw - 320px) / ($container - 320))
 		);
 		text-align: center;
 		margin-bottom: calc(
