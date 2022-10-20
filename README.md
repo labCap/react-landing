@@ -1,6 +1,6 @@
-#react-landing
+# react-landing
 
 hi, start dev 'react-landing'
 
-##link to stite
+## link to stite
 no link(
