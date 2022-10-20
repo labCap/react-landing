@@ -3,4 +3,5 @@
 hi, start dev 'react-landing'
 
 ## link to stite
-no link(
+
+https://react-landing-beta.vercel.app/
