@@ -1,5 +1,40 @@
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
+import { Section } from "./components/Section/Section";
+
+import img1 from "./img/1.jpg";
+import img2 from "./img/2.jpg";
+import img3 from "./img/3.jpg";
+import img4 from "./img/4.jpg";
+import img5 from "./img/5.jpg";
+
+const sectionList = [
+	{
+		title: "Style & Beauty",
+		subtitle: "New fashion brand",
+		img: img1,
+	},
+	{
+		title: "Living Room Girls",
+		subtitle: "Interior Design - Red Room",
+		img: img2,
+	},
+	{
+		title: "The shape of water flowers",
+		subtitle: "Book Cover",
+		img: img3,
+	},
+	{
+		title: "Capturing the sunlight",
+		subtitle: "Fashion Photoshoot",
+		img: img4,
+	},
+	{
+		title: "Looking on the other side",
+		subtitle: "Portrait photography",
+		img: img5,
+	},
+];
 
 function App() {
 	return (
@@ -7,17 +42,9 @@ function App() {
 			<Header />
 
 			<main className="main">
-				<section className="section">
-					<div className="container">
-						<div className="section__inner">
-							<h2 className="section__title">Style & Beauty</h2>
-							<h3 className="section__subtitle">New fashion brand</h3>
-							<a href="#" className="btn">
-								VIEW PROJECT
-							</a>
-						</div>
-					</div>
-				</section>
+				{sectionList.map((e) => (
+					<Section title={e.title} subtitle={e.subtitle} bgImg={e.img} />
+				))}
 
 				<section className="start">
 					<div className="container">

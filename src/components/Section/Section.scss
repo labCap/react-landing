@@ -2,13 +2,13 @@
 // ===============================================================================
 
 .section {
+	position: relative;
 	&__inner {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		height: 100vh;
-		position: relative;
 	}
 
 	&::before {
@@ -21,8 +21,6 @@
 		height: 100%;
 		background: rgba(0, 0, 0, 0.2);
 	}
-
-	background: url("../../img/1.jpg") no-repeat center/cover;
 
 	&__title {
 		font-family: "Playfair Display";
